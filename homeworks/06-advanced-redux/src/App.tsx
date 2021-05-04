@@ -1,0 +1,54 @@
+import React from "react";
+import "./App.css";
+import {
+  Loading,
+  Missing,
+  PizzaList,
+  PizzaBasket,
+  TotalPrice,
+} from "./components";
+
+import { useApp } from "./hooks";
+
+function App() {
+  const {
+    totalPrice,
+    pizza,
+    basket,
+    handleAddPizza,
+    handleMinusPizza,
+  } = useApp();
+
+  return (
+    <div className="grid grid-cols-3 gap-4 h-full">
+      <div className="col-span-2 p-8">
+        <div className="grid grid-cols-4 gap-4">
+          {pizza.length > 0 ? (
+            <PizzaList pizza={pizza} onAdd={handleAddPizza} />
+          ) : (
+            <Loading />
+          )}
+        </div>
+      </div>
+      <div className="col-span-1 bg-white overflow-y-auto h-full">
+        <div className="flex flex-col p-8">
+          <TotalPrice price={totalPrice} />
+
+          {basket.length > 0 ? (
+            <PizzaBasket basket={basket} onMinus={handleMinusPizza} />
+          ) : (
+            <Missing />
+          )}
+
+          <div className="flex flex-col">
+            <button className="bg-yellow-400 rounded-xl pt-2 pb-2">
+              Make Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
