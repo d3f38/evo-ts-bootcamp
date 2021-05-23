@@ -1,0 +1,112 @@
+.tabs {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.tab {
+    padding: 12px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    background: none;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    box-shadow: none;
+    cursor: pointer;
+    transition: border-bottom-color 0.3s;
+}
+
+.tab:first-child {
+    margin-right: 24px;
+}
+
+.active {
+    border-bottom-color: black;
+}
+
+.controls {
+    text-align: center;
+}
+
+.input {
+    padding: 5px 8px;
+    margin-right: 8px;
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+.select {
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+.button {
+    padding: 5px 8px;
+    border-radius: 0;
+    border: 2px solid black;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover { 
+    color: white;
+    background: black;
+}
+
+.photos {
+    width: 100%;
+    margin-top: 48px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.photo {
+    position: relative;
+    flex-basis: 25%;
+    display: flex;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+}
+
+.heart {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' version='1.1' width='512' height='512' x='0' y='0' viewBox='0 0 24 24' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='m11.466 22.776c.141.144.333.224.534.224s.393-.08.534-.224l9.594-9.721c2.491-2.523 2.491-6.63 0-9.154-1.21-1.226-2.819-1.901-4.532-1.901s-3.321.675-4.531 1.9l-1.065 1.08-1.065-1.079c-1.21-1.226-2.819-1.901-4.531-1.901-1.713 0-3.322.675-4.532 1.901-2.491 2.524-2.491 6.631 0 9.153zm-8.527-17.822c.926-.937 2.157-1.454 3.464-1.454 1.308 0 2.538.517 3.463 1.455l1.599 1.62c.281.285.786.285 1.067 0l1.599-1.621c.928-.937 2.158-1.454 3.465-1.454 1.308 0 2.538.517 3.464 1.454 1.917 1.943 1.917 5.104 0 7.048l-9.06 9.181-9.061-9.182c-1.917-1.942-1.917-5.104 0-7.047z' fill='%23ff3737' data-original='%23000000' style='' class=''/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: contain;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+.heart:hover {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' version='1.1' width='512' height='512' x='0' y='0' viewBox='0 0 24 24' style='enable-background:new 0 0 512 512' xml:space='preserve'%3E%3Cg%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='m11.466 22.776c.141.144.333.224.534.224s.393-.08.534-.224l9.594-9.721c4.001-4.053 1.158-11.055-4.532-11.055-3.417 0-4.985 2.511-5.596 2.98-.614-.471-2.172-2.98-5.596-2.98-5.672 0-8.55 6.984-4.531 11.055z' fill='%23ff3737' data-original='%23f44336' style=''/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.favourite {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' version='1.1' width='512' height='512' x='0' y='0' viewBox='0 0 24 24' style='enable-background:new 0 0 512 512' xml:space='preserve'%3E%3Cg%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='m11.466 22.776c.141.144.333.224.534.224s.393-.08.534-.224l9.594-9.721c4.001-4.053 1.158-11.055-4.532-11.055-3.417 0-4.985 2.511-5.596 2.98-.614-.471-2.172-2.98-5.596-2.98-5.672 0-8.55 6.984-4.531 11.055z' fill='%23ff3737' data-original='%23f44336' style=''/%3E%3C/g%3E%3C/svg%3E%0A");
+}
