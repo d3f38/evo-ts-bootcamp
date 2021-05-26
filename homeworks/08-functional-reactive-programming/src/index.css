@@ -1,0 +1,100 @@
+.app {
+  position: relative;
+  background-image: url("./images/bricks.png");
+  background-size: 250px 250px;
+  width: 600px;
+  height: 600px;
+  cursor: move; 
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.app:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.window {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 6px solid #242552;
+  background-color: #4d5a96;
+  background-size: contain;
+}
+
+.window-1 {
+  left: 0;
+  top: 45px;
+}
+
+.window-2 {
+  left: 250px;
+  top: 45px;
+}
+
+.window-3 {
+  left: 450px;
+  top: 45px;
+}
+
+.window-4 {
+  left: 50px;
+  top: 232px;
+}
+
+.window-5 {
+  left: 220px;
+  top: 232px;
+}
+
+.window-6 {
+  left: 400px;
+  top: 232px;
+}
+
+.window-7 {
+  left: 0;
+  top: 419px;
+}
+
+.window-8 {
+  left: 250px;
+  top: 419px;
+}
+
+.window-9 {
+  left: 470px;
+  top: 419px;
+}
+
+.window-with-cat {
+  background-image: url("./images/cat.png");
+}
+
+.counter {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fae15c;
+  font-family: monospace;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 800px;
+  font-size: 100px;
+  text-align: center;
+  color: red;
+}
+
+.message.visible {
+  display: block;
+}
