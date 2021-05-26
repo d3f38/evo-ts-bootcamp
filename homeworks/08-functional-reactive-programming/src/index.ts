@@ -1,5 +1,4 @@
 import { interval, combineLatest, fromEvent } from "rxjs";
-
 import { filter, scan, tap, map } from "rxjs/operators";
 
 import "./index.css";
@@ -8,7 +7,7 @@ const windows = document.querySelectorAll(".window");
 const counter = document.querySelector(".counter span")!;
 
 const getRandomWindow = () =>
-  Math.floor(Math.random() * (Math.floor(windows.length) + 1));
+  Math.floor(Math.random() * (Math.floor(windows.length - 1) + 1));
 
 const clearWindow = () => {
   windows.forEach((item) => item.classList.remove("window-with-cat"));
